@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+  <script src="public/js/application.js"></script>
+  <link rel="stylesheet" href="testingboardstylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+  <title>Connect Four</title>
+</head>
+<body>
+
+  <h1>Connect Four</h1>
+
+  <table id="table-transform" data-toolbar="#transform-buttons">
+    <tbody>
+    <tr id="tr-id-1" class="tr-class-1">
+        <td id="r1-c1" class="c1"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r1-c2" class="c2"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r1-c3" class="c3"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r1-c4" class="c4"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r1-c5" class="c5"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r1-c6" class="c6"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r1-c7" class="c7"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+    </tr>
+
+    <tr id="tr-id-2" class="tr-class-2">
+        <td id="r2-c1" class="c1"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r2-c2" class="c2"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r2-c3" class="c3"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r2-c4" class="c4"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r2-c5" class="c5"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r2-c6" class="c6"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r2-c7" class="c7"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+    </tr>
+
+    <tr id="tr-id-3" class="tr-class-3">
+        <td id="r3-c1" class="c1"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r3-c2" class="c2"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r3-c3" class="c3"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r3-c4" class="c4"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r3-c5" class="c5"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r3-c6" class="c6"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r3-c7" class="c7"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+
+    </tr>
+    <tr id="tr-id-4" class="tr-class-4">
+        <td id="r4-c1" class="c1"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r4-c2" class="c2"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r4-c3" class="c3"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r4-c4" class="c4"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r4-c5" class="c5"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r4-c6" class="c6"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+        <td id="r4-c7" class="c7"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+    </tr>
+
+    <tr id="tr-id-5" class="tr-class-5">
+      <td id="r5-c1" class="c1"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r5-c2" class="c2"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r5-c3" class="c3"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r5-c4" class="c4"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r5-c5" class="c5"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r5-c6" class="c6"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r5-c7" class="c7"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+    </tr>
+
+    <tr id="tr-id-6" class="tr-class-6">
+      <td id="r6-c1" class="c1"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r6-c2" class="c2"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r6-c3" class="c3"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r6-c4" class="c4"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r6-c5" class="c5"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r6-c6" class="c6"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+      <td id="r6-c7" class="c7"><svg height="100" width="100"><circle cx="50" cy="55" r="40" fill="white"/></svg></td>
+
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>
