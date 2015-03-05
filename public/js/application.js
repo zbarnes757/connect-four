@@ -1,7 +1,31 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  columnOneCheck();
+  columnTwoCheck();
 });
+
+function columnOneCheck(){
+  var row6Column1 = $('#r6-c1 circle')
+  $('.c1').on('click', function(){
+    row6Column1.attr("fill", "red");
+  })
+}
+
+function columnTwoCheck(){
+  var row6Column2 = $('#r6-c2 circle')
+  $('.c2').on('click', function(){
+    row6Column2.attr("fill", "red");
+  })
+}
+
+
+
+//select column****
+//select the last one is white to change the color
+//check the row below
+
+
+// var emptySlot = $('#r6-c1 circle').attr("fill", "white")
+
+// if(emptySlot){
+//   $('#r6-c1 circle').attr("fill", "red");
+// }
