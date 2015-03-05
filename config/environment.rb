@@ -22,6 +22,7 @@ require 'erb'
 
 require 'bcrypt'
 
+require 'sinatra/flash'
 require 'database_cleaner' if development? || test?
 I18n.enforce_available_locales = false
 # Some helper constants for path-centric logic
