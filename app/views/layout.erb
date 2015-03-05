@@ -16,6 +16,13 @@
 </head>
 <body>
   <%= erb :_nav %>
+
+  <% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+      <%= erb :_messages, locals: {error: error} %>
+    <% end %>
+  <% end %>
+
   <%= yield %>
 </body>
 </html>

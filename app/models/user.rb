@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
   validates :name, :password_hash, presence: true
   validates :email,
             :presence => {:message => "Enter your email address!" },
-            :format => { :with => VALID_EMAIL_REGEX, :message => "Enter a valid Email address !"},
-            :uniqueness => {:case_sensitive => false, :message => "Email already exists!"}
+            :format => { :with => VALID_EMAIL_REGEX, :message => " is not valid!"},
+            :uniqueness => {:case_sensitive => false, :message => " already exists!"}
   include BCrypt
 
   def password
