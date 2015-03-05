@@ -1,5 +1,10 @@
 class User < ActiveRecord::Base
-  # users.password_hash in the database is a :string
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :name, :password_hash, presence: true
+  validates :email,
+            :presence => {:message => "Enter your email address!" },
+            :format => { :with => VALID_EMAIL_REGEX, :message => "Enter a valid Email address !"},
+            :uniqueness => {:case_sensitive => false, :message => "Email already exists!"}
   include BCrypt
 
   def password

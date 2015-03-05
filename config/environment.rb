@@ -22,6 +22,8 @@ require 'erb'
 
 require 'bcrypt'
 
+require 'database_cleaner' if development? || test?
+I18n.enforce_available_locales = false
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
