@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> add navbar with links to login, signup, and logout
 get '/' do
   erb :index
 end
