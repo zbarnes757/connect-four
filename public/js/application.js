@@ -1,4 +1,3 @@
-
 Game.redTurn = true;
 
 Game.bindEvents = function(){
@@ -10,8 +9,8 @@ Game.bindEvents = function(){
 Game.handleClick = function(td) {
   var color = this.redTurn ? 'red' : 'black'
   var column = td.attr('class').split(' ')[0];
-  var row = td.parent().attr('id');
   var lastSlot = $('.' + column + '.unfilled').last();
+  var row = lastSlot.parent().attr('id');
   lastSlot.removeClass('unfilled').addClass('filled');
   lastSlot.find('circle').attr('fill', color);
   this.redTurn = !this.redTurn
@@ -25,12 +24,6 @@ $(document).ready(function() {
   Game.bindEvents();
 
 });
-
-
-
-
-
-    // redTurn === !redTurn if (redTurn ? 'red' : 'black');
 
 
 
