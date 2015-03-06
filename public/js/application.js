@@ -1,30 +1,10 @@
-Game.redTurn = true;
-
-Game.bindEvents = function(){
-  $('td').click(function(){
-    Game.handleClick($(this))
-  });
-};
-
-Game.handleClick = function(td) {
-  var color = this.redTurn ? 'red' : 'black'
-  var column = td.attr('class').split(' ')[0];
-  var lastSlot = $('.' + column + '.unfilled').last();
-  var row = lastSlot.parent().attr('id');
-  lastSlot.removeClass('unfilled').addClass('filled');
-  lastSlot.find('circle').attr('fill', color);
-  this.redTurn = !this.redTurn
-  color = this.redTurn ? 'red' : 'black'
-  var startingPiece = $('#starting-piece').attr('fill', color)
-};
 
 
 $(document).ready(function() {
-
-  Game.bindEvents();
+  var game = new Game();
+  game.bindEvents();
 
 });
-
 
 
 
