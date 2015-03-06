@@ -1,7 +1,16 @@
 $(document).ready(function() {
-  columnOneCheck();
-  columnTwoCheck();
+  $('td').click(function(event) {
+    var column = $(this).attr('class').split(' ')[0];
+    var row = $(this).parent().attr('id');
+    // console.log(column+ ' ' + row);
+    var lastSlot = $('.' + column + '.unfilled').last();
+    lastSlot.removeClass('unfilled').addClass('filled');
+    lastSlot.find('circle').attr('fill', 'red');
+
+  });
 });
+
+// columnCheck(colNum, playerColor)
 
 function columnOneCheck(){
   var row6Column1 = $('#r6-c1 circle')

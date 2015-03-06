@@ -12,6 +12,10 @@ post '/signup' do
   redirect '/'
 end
 
+post '/games' do
+
+end
+
 post '/login' do
   @user = User.find_by(email: params[:email])
   if @user && @user.authenticate(params[:password])
