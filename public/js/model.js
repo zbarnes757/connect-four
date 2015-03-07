@@ -49,9 +49,11 @@ Game.prototype.isThereAWinnner = function(color) {
         if (game.slots[rowIndex][columnIndex] === game.slots[rowIndex][columnIndex+1] && game.slots[rowIndex][columnIndex+1] === game.slots[rowIndex][columnIndex+2] && game.slots[rowIndex][columnIndex+2] === game.slots[rowIndex][columnIndex+3]) {
 
           if ( game.slots[rowIndex][columnIndex] === 'black') {
-            alert(player2Name + " is the winner!");
+            $('h2').text(player2Name + " is the winner!");
+            $('#player2-info-template .player-games').text('1');
           } else if ( game.slots[rowIndex][columnIndex] === 'red') {
-            alert(player1Name + " is the winner!");
+            $('h2').text(player1Name + " is the winner!");
+            $('#player1-info-template .player-games').text('1');
           }
 
         }
@@ -61,9 +63,11 @@ Game.prototype.isThereAWinnner = function(color) {
         if (game.slots[rowIndex][columnIndex] === game.slots[rowIndex+1][columnIndex] && game.slots[rowIndex+1][columnIndex] === game.slots[rowIndex+2][columnIndex] && game.slots[rowIndex+2][columnIndex] === game.slots[rowIndex+3][columnIndex]) {
 
           if ( game.slots[rowIndex][columnIndex] === 'black') {
-            alert(player2Name + " is the winner!");
+            $('h2').text(player2Name + " is the winner!");
+            $('#player2-info-template .player-games').text('1');
           } else if ( game.slots[rowIndex][columnIndex] === 'red') {
-            alert(player1Name + " is the winner!");
+            $('h2').text(player1Name + " is the winner!");
+            $('#player1-info-template .player-games').text('1');
           }
 
         }
@@ -73,9 +77,11 @@ Game.prototype.isThereAWinnner = function(color) {
         if (game.slots[rowIndex][columnIndex] === game.slots[rowIndex+1][columnIndex+1] && game.slots[rowIndex+1][columnIndex+1] === game.slots[rowIndex+2][columnIndex+2] && game.slots[rowIndex+2][columnIndex+2] === game.slots[rowIndex+3][columnIndex+3]) {
 
          if ( game.slots[rowIndex][columnIndex] === 'black') {
-           alert(player2Name + " is the winner!");
+           $('h2').text(player2Name + " is the winner!");
+           $('#player2-info-template .player-games').text('1');
          } else if ( game.slots[rowIndex][columnIndex] === 'red') {
-           alert(player1Name + " is the winner!");
+           $('h2').text(player1Name + " is the winner!");
+           $('#player1-info-template .player-games').text('1');
          }
 
         }
@@ -85,9 +91,11 @@ Game.prototype.isThereAWinnner = function(color) {
         if (game.slots[rowIndex][columnIndex] === game.slots[rowIndex-1][columnIndex+1] && game.slots[rowIndex-1][columnIndex+1] === game.slots[rowIndex-2][columnIndex+2] && game.slots[rowIndex-2][columnIndex+2] === game.slots[rowIndex-3][columnIndex+3]) {
 
           if ( game.slots[rowIndex][columnIndex] === 'black') {
-            alert(player2Name + " is the winner!");
+            $('h2').text(player2Name + " is the winner!");
+            $('#player2-info-template .player-games').text('1');
           } else if ( game.slots[rowIndex][columnIndex] === 'red') {
-            alert(player1Name + " is the winner!");
+            $('h2').text(player1Name + " is the winner!");
+            $('#player1-info-template .player-games').text('1');
           }
 
         }
