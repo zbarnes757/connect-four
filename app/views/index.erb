@@ -1,3 +1,40 @@
 <h2>Connect Four</h2>
 
 <%= erb :_board %>
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-1"></div>
+
+  <div class="col-md-4" id="player-1">
+    <div class="form-group">
+      <form id="player1_form" action="/find_user" method="post">
+        <input type="text" placeholder="Email" name="email" class="form-control">
+        <input type="submit" value="Find Red Player" class="btn btn-default">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-md-4" id="player-2">
+    <div class="form-group">
+      <form id="player2_form" action="/find_user" method="post">
+        <input type="text" placeholder="Email" name="email" class="form-control">
+        <input type="submit" value="Find Black Player" class="btn btn-default">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-md-1"></div>
+  <div class="col-md-1"></div>
+</div>
+
+
+<div id="player2-info-template" style="display: none;">
+  <h3 class="player-name"></h3>
+  <p >Games won: <span class="player-games"></span></p>
+</div>
+
+<div id="player1-info-template" style="display: none;">
+  <h3 class="player-name"></h3>
+  <p >Games won: <span class="player-games"></span></p>
+</div>
